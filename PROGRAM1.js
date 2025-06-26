@@ -24,10 +24,17 @@ class Calculator {
 // Example inputs
 const a = 10;
 const b = 5;
-const operations = ["add", "subtract", "multiply", "divide", "mod"]; // mod is invalid for testing
+const operations = ["add", "subtract", "multiply", "divide"];
 
 for (const operation of operations) {
   const calc = new Calculator(a, b, operation);
   const result = calc.calculate();
   console.log(`Operation: ${operation} => Result: ${result}`);
 }
+
+//THE OUTPUT OF THIS IS//
+
+Operation: add => Result: 15
+Operation: subtract => Result: 5
+Operation: multiply => Result: 50
+Operation: divide => Result: 2
